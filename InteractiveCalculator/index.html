@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script.js"> </script>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div id = "container">
+    <h1  >  SIMPLE CALCULATOR</h1>
+    <label for="firstNumber">1ST Number:</label>
+    <input type="number" id="firstNumber" name="firstNumber"><br>
+    <label class = "test3" for="secondNumber">2ND Number:</label>
+    <input type="number" id="secondNumber" name="secondNumber"><br>
+
+    <!-- <input type="submit" value="+" id="addition">
+    <input type="submit" value="-" id="subtraction">
+    <input type="submit" value="*" id="multiplication">
+    <input type="submit" value="/" id="division"> -->
+    
+    <button  id = "add" class = "buttons" onclick="addition(document.getElementById('firstNumber').value,document.getElementById('secondNumber').value)"> + </button>
+    <button  id = "sub" class = "buttons" onclick="subtraction(document.getElementById('firstNumber').value,document.getElementById('secondNumber').value)"> - </button>
+    <button  id = "multi" class = "buttons" onclick="multiplication(document.getElementById('firstNumber').value,document.getElementById('secondNumber').value)"> * </button>
+    <button  id = "div" class = "buttons" onclick="division(document.getElementById('firstNumber').value,document.getElementById('secondNumber').value)"> / </button>
+   
+    <hr>
+    <p id = "answer"></p>
+    <button onclick="changeMode()" id = "change"  class = "buttons">Dark Mode</button>
+
+</div>
+</body>
+</html>
